@@ -12,7 +12,7 @@ It sounds strange to me. Because I'm a beginner and just start to approach it. A
 
 [x] What is the Spring?
 [x] What is dependency injection?
-[]
+[x] DEPENDENCY
 []
 []
 
@@ -23,14 +23,33 @@ It sounds strange to me. Because I'm a beginner and just start to approach it. A
 ``The most important thing here, we are mentioning about terminologies which are related to Spring. Spring is a dependency injection framework.``
 
 ## What is dependency injection?
-![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/1.png)
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/1.png)
 ### Analyze it: 
--
+- This is a structure of developing website app.
+- You have layers of an application. In the past, we usually talk about website or application. It means that we just think that only one layer. Now, when we have more chances to approach and observe more systems. Everything will be changed by a huge evolution. It's not general structure. But, It's quite a bit typical. 
+- Let's talk about business layer, data layer and web layer. Actually, web layer is most concerned with the UI of the application. => **How do you show stuff to user?**
+- Finally, this is how we build web applications.
+- The web layer is dependent on business layer and the business layer is dependent on the data.
 
-When to use it:
-1. When one object changes its state,then all other dependents object must automatically change their state to maintain consistency
-2. When subject doesn't know about number of observers it has.
-3. When an object should be able to notify other objects without knowing who objects are.
+## DEPENDENCY
+- For example, we design a view that allow users to input number. After they click on Submit button. We will get data. 
+- Logic business here: Data will be sorted before storing in database.
+- A new complex business was born to do before transfer next.
+
+```java
+public class ComplexBusinessService {
+	SortAlgorithm sortAlgorithm;
+}
+```
+- So **SortAlgorithm** is dependency of the Business Login class. But, the concept of dependency is fairly simple. What does complex business service need to be able to provide it service? It needs a sort algorithm. Dependency of a class is basically what are all the things. It needs to be able to perform its functionality.
+
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/2.png)
+
+- We inject interface **SortAlgorithm** or declare interface **SortAlgorithm** inside class **ComplexBusinessService**. Now, we need to create a class to define all methods inside it. Here is class **BubbleSortAlgorithm.java**.
+- Assume that, we define two method named is A and B. From interface **SortAlgorithm** in class **ComplexBusinessService**. We just call both of two methods above.
+- Expand all: We can implement interfaces.
+
+## CONTINUE
 
 ```java
 import java.util.ArrayList;
