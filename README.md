@@ -1,5 +1,3 @@
-# Spring-Boot-Website-Tutorial
-
 # SPRING BOOT TUTORIAL [![Build Status](https://travis-ci.org/nomensa/jquery.hide-show.svg)](https://travis-ci.org/nomensa/jquery.hide-show.svg?branch=master)
 
    ```Write once, run anywhere```
