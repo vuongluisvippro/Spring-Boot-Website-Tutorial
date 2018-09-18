@@ -48,38 +48,35 @@ public class ComplexBusinessService {
 - We inject interface **SortAlgorithm** or declare interface **SortAlgorithm** inside class **ComplexBusinessService**. Now, we need to create a class to define all methods inside it. Here is class **BubbleSortAlgorithm.java**.
 - Assume that, we define two method named is A and B. From interface **SortAlgorithm** in class **ComplexBusinessService**. We just call both of two methods above.
 - Expand all: We can implement interfaces.
-
-## CONTINUE
+- Using constructor
 
 ```java
-import java.util.ArrayList;
-import java.util.List;
+public class ComplexBusinessService {
+	SortAlgorithm sortAlgorithm;
+	public ComplexBusinessService(SortAlgorithm sortAlgorithm) {
+		this.sortAlgorithm = sortAlgorithm;
+	}
+}
 
-  public class Subject {
-
-  private int state;
-
-  public int getState() {
-    return state;
-  }
-
- public void setState(int state) {
- import java.util.ArrayList;
-  import java.util.List;
-
-  public class Subject {
-
-  private int state;
-
-  public int getState() {
-    return state;
-  }
-
- public void setState(int state) {
-   this.state = state;
- }
-}   
+public class BubbleSortAlgorithm implements SortAlgorithm {
 ```
+
+## SPRING FRAMEWORK
+### @Component
+- For example:
+```java
+@Component
+public class ComplexBusinessService {
+	SortAlgorithm sortAlgorithm;
+}
+
+@Component
+public class BubbleSortAlgorithm implements SortAlgorithm {
+}
+```
+
+
+
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> We need <b>ArrayList<Observer>()</b>, <b>attach(Observer observer)</b>, <b>notifyAllObservers()</b> and finally <b>notifyAllObservers()</b>
    
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/c.png" width="24px" height="24px"/>  Create variable to contain these observers<br>
