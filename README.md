@@ -75,12 +75,36 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 }
 ```
 
-
-
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Advance <b> Java Spring Framework</b>
 
+```java
+@Component
+public class ComplexBusinessService {
+	@Autowired
+	SortAlgorithm sortAlgorithm;
+}
+
+@Component
+public class BubbleSortAlgorithm implements SortAlgorithm {
+}
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Understand <b> </b>
+- It would make sure that the instances of all the objects will be created and managed with the dependencies.
 
 
+## TERMINOLOGY
+- What we are looking here? Perhaps, A list of teminologies relate or associate with Spring Framework.
+### Beans
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/2.png)
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Analyze <b> Java Spring Beans</b>
+
+### Autowiring
+
+
+### Dependency Injection
+### Inversion of Control
+### IOC Container
+### Application Context
 
    
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/c.png" width="24px" height="24px"/>  Create variable to contain these observers<br>
