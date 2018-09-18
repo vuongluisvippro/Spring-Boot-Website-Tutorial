@@ -23,7 +23,7 @@ It sounds strange to me. Because I'm a beginner and just start to approach it. A
 ``The most important thing here, we are mentioning about terminologies which are related to Spring. Spring is a dependency injection framework.``
 
 ## What is dependency injection?
-![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/1.png)
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/1.png)
 ### Analyze it: 
 -
 
