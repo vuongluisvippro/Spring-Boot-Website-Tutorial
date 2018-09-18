@@ -9,11 +9,23 @@ It sounds strange to me. Because I'm a beginner and just start to approach it. A
 ## Schedule & Plan `Java Project`
 
 ``As you can see. When I'm starting to learn anything. Especially, these things want to connect with me. I couldn't say no or stop it. It takes me a lot of time to explore and understand "What the hell"?``
+
+[x] What is the Spring?
+[x] What is dependency injection?
+[]
+[]
+[]
+
+
+## What is the Spring?
+``In this lesson, we will learn about what is the definition of Spring in programming? Why do they call it as named "Framework"?``
+
+``The most important thing here, we are mentioning about terminologies which are related to Spring. Spring is a dependency injection framework.``
+
+## What is dependency injection?
 ![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/1.png)
-
-## We Research about "Observe Design Pattern"
-
-
+### Analyze it: 
+-
 
 When to use it:
 1. When one object changes its state,then all other dependents object must automatically change their state to maintain consistency
