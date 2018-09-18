@@ -95,8 +95,11 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 ## TERMINOLOGY
 - What we are looking here? Perhaps, A list of teminologies relate or associate with Spring Framework.
 ### Beans
-![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/2.png)
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/3.png)
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Analyze <b> Java Spring Beans</b>
+- We're talking about Spring Framework. So that's why, these terminologies here will concern with it. To create instances of the complex business service and bubble sort. These are instances that Spring manages. These thing are called beans. Beans are different objects that are managed.
+
+
 
 ### Autowiring
 
