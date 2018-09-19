@@ -99,15 +99,36 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Analyze <b> Java Spring Beans</b>
 - We're talking about Spring Framework. So that's why, these terminologies here will concern with it. To create instances of the complex business service and bubble sort. These are instances that Spring manages. These thing are called beans. Beans are different objects that are managed.
 
-
-
 ### Autowiring
-
-
 ### Dependency Injection
 ### Inversion of Control
 ### IOC Container
 ### Application Context
+
+## SOME TERMINOLOGIES
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/4.png)
+[] Setting up a Spring Framework
+[] Understanding tight coupling
+[] Introduce loose coupling
+[] Using Spring to manage Beans
+[] What's happening in Background?
+[] Dynamic Autowiring
+[] Types of Autowiring
+[] Spring Modules
+[] Spring Projects
+[] Why is the Spring popular?
+
+### Setting up a Spring Framework
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/5.png)
+- Here is link: https://start.spring.io/
+- Here is package after done: ![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/demo.zip)
+- Launch eclipse with version here: **Eclipse Java EE Oxygen**
+- And then you are ready to go into eclipse and start importing that project. So, all you need to do now is finding **Existing Maven Projects**. Then paste path of root project. Notice to **porn.xml** file. 
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/6.png)
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/7.png)
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/8.png)
+- If this is a first time you guys are working with the Spring Board Project. The improtant might take a little bit. There are a lot of dependencies that need to download to set up this project.
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/9.png)
 
    
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/c.png" width="24px" height="24px"/>  Create variable to contain these observers<br>
