@@ -119,6 +119,8 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 [] Why is the Spring popular?
 
 ### Setting up a Spring Framework
+(https://travis-ci.org/nomensa/jquery.hide-show.svg)](https://travis-ci.org/nomensa/jquery.hide-show.svg?branch=master)
+
 ![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/5.png)
 - Here is link: https://start.spring.io/
 - Here is package after done: ![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/demo.zip)
@@ -139,9 +141,62 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 ![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/12.png)
 ![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/13.png)
 
-### Understanding tight coupling (https://travis-ci.org/nomensa/jquery.hide-show.svg)](https://travis-ci.org/nomensa/jquery.hide-show.svg?branch=master)
+### Understanding tight coupling 
+(https://travis-ci.org/nomensa/jquery.hide-show.svg)](https://travis-ci.org/nomensa/jquery.hide-show.svg?branch=master)
+- If you are familiar with programming you know what a search is, right? So, you're given a number, you're an array. You try to find the number in an array. 
+- For example: I want to search this array for this number. A binary search is a specific search algorithm which expects the array to be sorted. For binary search.
+- Here we go, let's get started. Let's go and say finish. The first step of binary search is sorting an array. Binary search expects 
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/14.png)
+- So the first step of binary search would be to do sorting. Right? So first you'd implement is sorting. Implementing sorting login here and then you would actually implement the search login here and after searching.
+##### Why to sort repeatedly for each search?
+##### How do we make this algorithm more efficient?
 
+### Exercise: I want to design function search data when users want to find datas. How can I do it?
+- Draw sequence diagram to describe about this
 
+#### @Component && @Autowire
+```java
+@Component
+public class BinarySearchImpl {
+	
+	private SortAlgorithm mSortAlgorithm;
+	
+	public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
+		super();
+		this.mSortAlgorithm = sortAlgorithm;
+	}
+	
+	public int binarySearch(int[] numbers, int numberToSearchFor) {
+
+		int[] sortedNumbers = mSortAlgorithm.sort(numbers);
+		System.out.println(mSortAlgorithm);
+		System.out.println("Size of the array: "+sortedNumbers.length);
+		// Implementing Sort Logic
+		
+		// Bubble Sort Algorithm
+		
+		// Search for the array
+		return 3;
+	}
+}
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Continue <b></b>
+
+```java
+package com.tutorial.javaspring.demo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BubbleSortAlgorithm implements SortAlgorithm{
+	
+	@Override
+	public int[] sort(int[] numbers) {
+		// Login for Bubble Sort 
+		return numbers;
+	}
+}
+```
 
 
 
