@@ -1,0 +1,5 @@
+package com.tutorial.template.java.controller;
+
+public class LoginServlet {
+
+}
