@@ -129,6 +129,28 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 ![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/8.png)
 - If this is a first time you guys are working with the Spring Board Project. The improtant might take a little bit. There are a lot of dependencies that need to download to set up this project.
 ![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/9.png)
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Analyze <b> Structure of Maven Project Java</b>
+- This is where the Java code will be written. So, it means main resources.
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/10.png)
+- This is where all the application properties will be decided.
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/11.png)
+- Currently, there is not a lot of things that are there right now so if you go ahead and run it actually or if you want to say something. Just go ahead.
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Run <b> Java Application</b>
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/12.png)
+![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/master/training/13.png)
+
+### Understanding tight coupling (https://travis-ci.org/nomensa/jquery.hide-show.svg)](https://travis-ci.org/nomensa/jquery.hide-show.svg?branch=master)
+
+
+
+
+
+
+
+
+
+
+
 
    
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/c.png" width="24px" height="24px"/>  Create variable to contain these observers<br>
