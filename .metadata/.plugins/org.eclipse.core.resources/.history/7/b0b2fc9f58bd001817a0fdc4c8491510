@@ -1,0 +1,5 @@
+package come.tutorial.client;
+
+public class SpringBootFormHandlingApplication {
+
+}
