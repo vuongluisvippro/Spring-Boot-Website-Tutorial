@@ -15,13 +15,19 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import com.tutorial.genealogy.filter.JWTAuthenticationFilter;
 import com.tutorial.genealogy.filter.JWTLoginFilter;
  
+/**
+ * Reference: https://github.com/spring-projects/spring-security-oauth/tree/2.2.1.RELEASE
+ * @author lorence
+ *
+ */
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
  
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+    	System.out.println("WebSecurityConfig: "+ "configure");
         http.csrf().disable().authorizeRequests()
-                .antMatchers("/").permitAll() //
+                .antMatchers("/").permitAll() 
                 .antMatchers(HttpMethod.POST, "/login").permitAll() 
                 .antMatchers(HttpMethod.GET, "/login").permitAll() 
                 .anyRequest().authenticated()
@@ -33,12 +39,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
  
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
+    	System.out.println("WebSecurityConfig: "+ "passwordEncoder");
         BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
         return bCryptPasswordEncoder;
     }
  
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+    	System.out.println("WebSecurityConfig: "+ "configure");
         String password = "123123";
         String encrytedPassword = this.passwordEncoder().encode(password);
         System.out.println("Encoded password of 123123=" + encrytedPassword);
