@@ -7,5 +7,6 @@
 
 ## Running server site: http://localhost:3000/user/getEmployeesList
 ![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/lorence_impl_oauth2/img/3.png)
-Fill in **admin/admin**
+- Fill in **admin/admin**
 ![alt text](https://github.com/vuongluisvippro/Spring-Boot-Website-Tutorial/blob/lorence_impl_oauth2/img/4.png)
+- 
