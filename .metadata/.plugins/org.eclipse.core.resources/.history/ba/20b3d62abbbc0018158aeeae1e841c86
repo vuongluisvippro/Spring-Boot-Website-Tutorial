@@ -1,0 +1,5 @@
+package com.tutorial.genealogy.config;
+
+public class WebSecurityConfig {
+
+}
