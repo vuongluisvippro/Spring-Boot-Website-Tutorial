@@ -1,0 +1,5 @@
+package com.tutorial.genealogy.model;
+
+public class Person {
+
+}

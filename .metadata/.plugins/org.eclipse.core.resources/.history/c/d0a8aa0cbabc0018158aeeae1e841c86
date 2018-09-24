@@ -1,0 +1,5 @@
+package com.tutorial.genealogy.dao;
+
+public class EmployeeDao {
+
+}

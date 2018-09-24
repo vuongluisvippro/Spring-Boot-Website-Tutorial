@@ -1,0 +1,5 @@
+package com.tutorial.genealogy.web.app;
+
+public class SpringBootJspApplication {
+
+}
