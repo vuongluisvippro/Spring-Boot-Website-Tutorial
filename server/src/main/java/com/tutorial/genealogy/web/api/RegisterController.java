@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tutorial.genealogy.model.User;
-import com.tutorial.genealogy.service.UserService;
+import com.tutorial.genealogy.service.LoginService;
+import com.tutorial.genealogy.service.RegisterService;
 
 @SuppressWarnings("all")
 @RestController
@@ -21,11 +22,11 @@ import com.tutorial.genealogy.service.UserService;
 public class RegisterController {
 	
 	@Autowired
-	private UserService mUserService;
+	private RegisterService mRegisterService;
 	
     @PostMapping
     public ResponseEntity generate(@RequestBody final User user) {
-        return new ResponseEntity<>(mUserService.registerUser(user), HttpStatus.OK);
+        return new ResponseEntity<>(mRegisterService.registerUser(user), HttpStatus.OK);
     }
 }
 

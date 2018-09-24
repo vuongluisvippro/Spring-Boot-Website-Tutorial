@@ -18,7 +18,7 @@ public class User {
 	private Integer id;
 	
 	@Column(name="user_name")
-	private String userName;
+	private String username;
 	
 	@Column(name="role")
 	private String role;
@@ -28,14 +28,14 @@ public class User {
 	
 	public User(String userName, String role) {
 		super();
-		this.userName = userName;
+		this.username = userName;
 		this.role = role;
 	}
 
-	public User(Integer id, String userName, String role) {
+	public User(Integer id, String username, String role) {
 		super();
 		this.id = id;
-		this.userName = userName;
+		this.username = username;
 		this.role = role;
 	}
 
@@ -48,11 +48,11 @@ public class User {
 	}
 
 	public String getUserName() {
-		return userName;
+		return username;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserName(String username) {
+		this.username = username;
 	}
 
 	public String getRole() {

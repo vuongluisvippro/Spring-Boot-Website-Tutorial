@@ -7,5 +7,5 @@ import com.tutorial.genealogy.model.User;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Integer> {
-	
+	User findUserEntityByUsername(String userName);
 }
