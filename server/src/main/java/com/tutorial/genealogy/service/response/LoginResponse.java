@@ -2,20 +2,20 @@ package com.tutorial.genealogy.service.response;
 
 public class LoginResponse {
 	
-	private MessageResponse message;
+	private MessageResponse error;
     private String token;
 
-    public LoginResponse(MessageResponse message, String token) {
-        this.message = message;
+    public LoginResponse(MessageResponse error, String token) {
+        this.error = error;
         this.token = token;
     }
 
-    public MessageResponse getMessage() {
-        return message;
+    public MessageResponse getError() {
+        return error;
     }
 
     public void setMessage(MessageResponse message) {
-        this.message = message;
+        this.error = message;
     }
 
     public String getToken() {

@@ -22,15 +22,36 @@ public class UserService {
 		mUserRepository = userRepository;
 		mJwtGenerator = jwtGenerator;
 	}
+
+	public MessageResponse registerUser(User user) {
+		try {
+			mUserRepository.save(user);
+			return viewMessage("You have been successfully registered");
+		} catch(Exception ex) {
+			return viewMessage("Failed to create account");
+		}
+	}
 	
-    public LoginResponse checkLogin(User user) {
+	public LoginResponse checkLogin(User user) {
     	mUserRepository.save(user);
     	
         MessageResponse messageResponse = new MessageResponse();
         
-        messageResponse.setCode(0);
+        messageResponse.setCode(HTTPCodeResponse.SUCCESS);
         messageResponse.setDescription("Success");
         LoginResponse loginResponse = new LoginResponse(messageResponse, mJwtGenerator.generate(user));
         return loginResponse;
     }
+	
+	private MessageResponse viewMessage(String message) {
+		MessageResponse messageResponse = new MessageResponse();
+        messageResponse.setCode(HTTPCodeResponse.SUCCESS);
+        messageResponse.setDescription(message);
+        return messageResponse;
+	}
+	
+	private static class HTTPCodeResponse {
+		private static final int SUCCESS = 0;
+	}
 }
+
