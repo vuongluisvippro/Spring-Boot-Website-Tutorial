@@ -13,23 +13,23 @@ public class JwtValidator {
 	private String secret = "youtube";
 
     public User validate(String token) {
-        User jwtUser = null;
+        User user = null;
         try {
             Claims body = Jwts.parser()
                     .setSigningKey(secret)
                     .parseClaimsJws(token)
                     .getBody();
 
-            jwtUser = new User();
+            user = new User();
 
-            jwtUser.setUserName(body.getSubject());
-            jwtUser.setId(Integer.parseInt(body.get("userId").toString()));
-            jwtUser.setRole((String) body.get("role"));
+            user.setUserName(body.getSubject());
+            user.setId(Integer.parseInt(body.get("userId").toString()));
+            user.setRole((String) body.get("role"));
         }
         catch (Exception e) {
             System.out.println(e);
         }
 
-        return jwtUser;
+        return user;
     }
 }

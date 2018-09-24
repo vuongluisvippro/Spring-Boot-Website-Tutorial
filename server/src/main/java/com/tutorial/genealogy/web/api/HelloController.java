@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tutorial.genealogy.model.User;
-import com.tutorial.genealogy.service.LoginService;
+import com.tutorial.genealogy.service.UserService;
 
 @SuppressWarnings("all")
 @RestController
@@ -15,7 +15,7 @@ import com.tutorial.genealogy.service.LoginService;
 public class HelloController {
 	
 	@Autowired
-	private LoginService mUserService;
+	private UserService mUserService;
 	
 	@GetMapping()
 	public String hello() {

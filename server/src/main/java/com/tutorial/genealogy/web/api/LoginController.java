@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tutorial.genealogy.model.User;
 import com.tutorial.genealogy.security.JwtGenerator;
-import com.tutorial.genealogy.service.LoginService;
+import com.tutorial.genealogy.service.UserService;
 import com.tutorial.genealogy.service.response.LoginResponse;
 
 @SuppressWarnings("all")
@@ -25,11 +25,11 @@ import com.tutorial.genealogy.service.response.LoginResponse;
 public class LoginController {
 	
 	@Autowired
-	private LoginService mUserService;
+	private UserService mUserService;
 	
     @PostMapping
     public ResponseEntity generate(@RequestPart("username") String username) {
-        return new ResponseEntity<>(mUserService.checkLogin(username), HttpStatus.OK);
+        return new ResponseEntity<>(mUserService.login(username), HttpStatus.OK);
     }
 }
 
