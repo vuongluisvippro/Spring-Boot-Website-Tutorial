@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @SuppressWarnings("all")
 @Entity
-@Table(name = "mytable")
+@Table(name = "user")
 public class User {
 	
 	@Id
@@ -17,23 +17,26 @@ public class User {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	
-	private String username;
+	@Column(name="user_name")
+	private String userName;
 	
-	private String password;
+	@Column(name="role")
+	private String role;
 	
-	private String firstname;
+	public User() {
+	}
 	
-	private String lastname;
-	
-	private Integer age;
-
-	public User(String username, String password, String firstname, String lastname, Integer age) {
+	public User(String userName, String role) {
 		super();
-		this.username = username;
-		this.password = password;
-		this.firstname = firstname;
-		this.lastname = lastname;
-		this.age = age;
+		this.userName = userName;
+		this.role = role;
+	}
+
+	public User(Integer id, String userName, String role) {
+		super();
+		this.id = id;
+		this.userName = userName;
+		this.role = role;
 	}
 
 	public Integer getId() {
@@ -44,44 +47,20 @@ public class User {
 		this.id = id;
 	}
 
-	public String getUsername() {
-		return username;
+	public String getUserName() {
+		return userName;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getRole() {
+		return role;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getFirstname() {
-		return firstname;
-	}
-
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
-
-	public String getLastname() {
-		return lastname;
-	}
-
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
-
-	public Integer getAge() {
-		return age;
-	}
-
-	public void setAge(Integer age) {
-		this.age = age;
+	public void setRole(String role) {
+		this.role = role;
 	}
 	
 }

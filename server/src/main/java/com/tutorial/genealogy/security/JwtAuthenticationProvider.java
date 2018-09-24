@@ -12,8 +12,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import com.tutorial.genealogy.model.JwtAuthenticationToken;
-import com.tutorial.genealogy.model.JwtUser;
 import com.tutorial.genealogy.model.JwtUserDetails;
+import com.tutorial.genealogy.model.User;
 
 @Component
 public class JwtAuthenticationProvider extends AbstractUserDetailsAuthenticationProvider {
@@ -31,8 +31,9 @@ public class JwtAuthenticationProvider extends AbstractUserDetailsAuthentication
 
         JwtAuthenticationToken jwtAuthenticationToken = (JwtAuthenticationToken) usernamePasswordAuthenticationToken;
         String token = jwtAuthenticationToken.getToken();
+        System.out.println("Token: "+token);
 
-        JwtUser jwtUser = validator.validate(token);
+        User jwtUser = validator.validate(token);
 
         if (jwtUser == null) {
             throw new RuntimeException("JWT Token is incorrect");
