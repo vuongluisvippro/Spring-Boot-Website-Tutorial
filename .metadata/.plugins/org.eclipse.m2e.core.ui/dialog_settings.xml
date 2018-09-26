@@ -37,6 +37,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/lorence/Downloads/apidemo"/>
+			<item value="/home/lorence/Documents/WorkspaceEclipse/apidemo-master"/>
 			<item value="/home/lorence/Documents/WorkspaceEclipse/client"/>
 			<item value="/home/lorence/Desktop/boot-oauth-client-application"/>
 			<item value="/home/lorence/Desktop/boot-resource-server"/>

@@ -1,6 +1,9 @@
 package com.tutorial.genealogy.web.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AnonymousAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,6 +22,11 @@ public class HelloController {
 	
 	@GetMapping()
 	public String hello() {
-		return "Hello World";
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		String temp = "";
+		if (!(authentication instanceof AnonymousAuthenticationToken)) {
+		    temp = authentication.getName();
+		}
+		return temp;
 	}
 }

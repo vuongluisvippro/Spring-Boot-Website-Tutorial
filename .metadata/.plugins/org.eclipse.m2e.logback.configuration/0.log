@@ -12775,3 +12775,37 @@ org.eclipse.core.runtime.CoreException: Launch configuration DemoApplication ref
 2018-09-24 17:26:12,552 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 104 resources
 2018-09-24 17:26:12,554 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-09-24 17:26:12,554 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-25 09:08:12,564 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-09-25 09:08:15,644 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 09:08:15,649 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2018-09-25 09:08:15,660 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 104 resources
+2018-09-25 09:08:15,664 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 09:08:15,665 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-25 15:53:03,673 [Worker-6] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-25 15:53:08,092 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:53:08,100 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2018-09-25 15:53:08,135 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 104 resources
+2018-09-25 15:53:08,281 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 15:53:08,281 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-25 17:28:20,822 [Worker-7] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-25 17:28:24,851 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:28:24,855 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2018-09-25 17:28:24,866 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 104 resources
+2018-09-25 17:28:24,889 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-25 17:28:24,889 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-26 09:24:55,644 [Worker-5] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-09-26 09:25:00,157 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-26 09:25:00,171 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2018-09-26 09:25:00,194 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 104 resources
+2018-09-26 09:25:00,272 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-26 09:25:00,272 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-26 12:20:14,863 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-26 12:20:14,873 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2018-09-26 12:20:14,877 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 104 resources
+2018-09-26 12:20:14,879 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-26 12:20:14,879 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-09-26 12:25:43,782 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-26 12:25:43,784 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2018-09-26 12:25:43,786 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 104 resources
+2018-09-26 12:25:43,790 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-09-26 12:25:43,791 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
